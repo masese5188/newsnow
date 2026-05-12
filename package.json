@@ -12,7 +12,7 @@
   "homepage": "https://github.com/ourongxing/newsnow",
   "scripts": {
     "dev": "npm run presource && vite dev",
-    "build": "npm run presource && vite build",
+    "build": "npm run presource && vite build && mkdir -p public && cp -r dist/output/public/* public/",
     "pages-dev": "exit 0",
     "lint": "eslint",
     "presource": "tsx ./scripts/favicon.ts && tsx ./scripts/source.ts",
